@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Posts</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="notification">
+                <p class="notification__text">Пост создан</p>
+                <button class="notification__button">Ok</button>
+            </div>
+            <header class="header">
+                <h1 class="title">
+                    Создание записей и работа с сервером Firebase.
+                </h1>
+
+                <section class="blog">
+                    <div class="create">
+                        <button class="create__button button">
+                            Создать новую запись
+                        </button>
+                    </div>
+                    <form id="create" class="hide">
+                        <div class="form-box">
+                            <label class="form-box__subtitle">Название</label>
+                            <p class="form-box__error error hide error-title">
+                                Введите корректное название
+                            </p>
+                            <input
+                                type="text"
+                                placeholder="Введите название"
+                                id="title"
+                                class="border--violet"
+                            />
+                        </div>
+
+                        <div class="form-box">
+                            <label class="form-box__subtitle">Содержимое</label>
+                            <p class="form-box__error error hide error-text">
+                                Введите корректный текст
+                            </p>
+                            <textarea
+                                id="textarea"
+                                placeholder="Введите содержимое поста"
+                                class="border--violet"
+                            ></textarea>
+                        </div>
+
+                        <button class="form__button button" type="submit">
+                            Создать
+                        </button>
+                    </form>
+                </section>
+            </header>
+
+            <section class="content"></section>
+            <div class="show">
+                <button class="create__button button" id="show-posts">
+                    Показать все посты
+                </button>
+            </div>
+        </div>
+    </body>
+</html>
