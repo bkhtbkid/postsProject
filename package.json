@@ -1,15 +1,12 @@
 {
     "name": "posts",
     "version": "1.0.0",
-    "homepage": "https://bkhtbkid.github.io/posts-project/",
     "description": "posts project",
     "main": "index.js",
     "scripts": {
         "dev": "webpack --mode development",
         "build": "webpack --mode production",
-        "start": "webpack-dev-server --mode development --open",
-        "deploy": "gh-pages -d build",
-        "predeploy": "npm run build"
+        "start": "webpack-dev-server --mode development --open"
     },
     "keywords": [
         "posts",
@@ -25,8 +22,5 @@
         "webpack": "^5.73.0",
         "webpack-cli": "^4.10.0",
         "webpack-dev-server": "^4.9.3"
-    },
-    "dependencies": {
-        "gh-pages": "^4.0.0"
     }
 }
